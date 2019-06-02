@@ -19,7 +19,7 @@ class TaskModel
         $this->validate_email();
         $this->validate_description();
 
-        return count($this->errors) === 0;
+        return $this->errors === 0;
     }
     private function validate_username()
     {

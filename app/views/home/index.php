@@ -1,4 +1,4 @@
-<p><?php if($data['user']): ?>
-	<?php echo $data['user']->username;?>
-	<?php endif;?>
-</p>
+<?php require APPROOT.'/views/templates/header.php';?>
+<?php require APPROOT.'/views/templates/navbar.php';?>
+<?php require APPROOT.'/views/templates/table.php';?>
+<?php require APPROOT.'/views/templates/footer.php';?>

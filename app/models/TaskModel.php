@@ -51,7 +51,7 @@ class TaskModel
         {
             return $this->errors['description'] = 'Please, enter description.';
         }
-    	if (!preg_match('/^[a-z\d_]{5,200}$/i', $this->description))
+    	if (!preg_match('/^[a-zA-Z0-9_.,\s]{5,300}$/i', $this->description))
     	{
     		return $this->errors['description'] = 'Not valid.';
     	}
